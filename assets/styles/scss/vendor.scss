@@ -1,14 +1,178 @@
-// ------ Fonts ------
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@charset "UTF-8";
+p {
+  margin-bottom: 1.5rem; }
 
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 800; }
 
-// ------ Bootstrap ------
-// Begin redefine bootstrap vars
-$font-family-sans-serif: 'Open Sans', sans-serif;
-// END redefine bootstrap vars
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  ul li {
+    margin-bottom: 1.5rem; }
+    ul li:before {
+      content: "ΓÇó";
+      margin-right: 5px;
+      font-weight: 800; }
 
-@import "../../vendor/bootstrap/scss/functions";
-@import "../../vendor/bootstrap/scss/variables";
-@import "../../vendor/bootstrap/scss/mixins";
-@import "../../vendor/bootstrap/scss/reboot";
-@import "../../vendor/bootstrap/scss/grid";
+.section__title {
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 4px 0 0 rgba(153, 204, 51, 0.5);
+  margin-bottom: 4px;
+  background: -webkit-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
+  background: -moz-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
+  background: -o-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
+  background: -ms-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
+  background: linear-gradient(0deg, #99cc33 0%, #ccff33 100%); }
+  .btn:hover {
+    color: #fff;
+    text-decoration: none; }
+  .btn-arrowed {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 800;
+    box-shadow: 0px 6px 0 0 rgba(0, 0, 0, 0.25);
+    padding: 12px 24px; }
+    .btn-arrowed:after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f054';
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.header {
+  background-image: url("../../img/bg-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 22px; }
+  .header:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    top: 40%;
+    left: 30%;
+    box-shadow: 0px 0px 300px 200px #fff; }
+
+.about {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+  .about__title {
+    font-size: 1.125rem;
+    margin-bottom: 2px; }
+  .about__legend {
+    background-color: #339999;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 800;
+    margin-bottom: 5px; }
+  .about__text {
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    margin-bottom: 2px; }
+    .about__text .accent {
+      font-size: 1.25rem;
+      color: #339999;
+      white-space: nowrap; }
+    .about__text .smaller {
+      font-size: .842rem; }
+  .about__image-holder {
+    height: 186px;
+    background-color: #666666; }
+
+.trader-form {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 10px 16px 10px;
+  margin: auto -10px;
+  color: #fefdff; }
+  .trader-form__header {
+    font-size: .875rem; }
+  .trader-form__logo {
+    max-width: 113px;
+    margin-bottom: 5px; }
+  .trader-form__slogan {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .trader-form__text {
+    line-height: 1.5rem;
+    margin-bottom: 14px; }
+  .trader-form select,
+  .trader-form input {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1rem;
+    padding: 15px 50px;
+    margin-bottom: 10px; }
+  .trader-form .btn {
+    width: 100%; }
+
+.offers__section {
+  text-align: center;
+  background-image: url("../../img/bg-offers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0; }
+
+.offer {
+  line-height: 1.5; }
+  .offer .offer__icon_wrapper {
+    margin-bottom: 30px; }
+  .offer .offer__title {
+    text-transform: uppercase;
+    color: #339999;
+    font-size: 1rem;
+    margin-bottom: 1.5rem; }
+
+.start-now__section {
+  background-image: url("../../img/bg-start-now.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 25px 0; }
+  .start-now__section .section__title {
+    line-height: 1.875rem;
+    color: #fff; }
+  .start-now__section .btn {
+    width: 100%; }
+
+.footer {
+  background-color: #000;
+  color: #666666;
+  text-align: center;
+  font-size: .875rem;
+  line-height: 20px;
+  padding: 31px 0; }
+
+/*# sourceMappingURL=vendor.scss.map */
