@@ -9,6 +9,12 @@ $fa-font-path: "../../vendor/fontawesome/web-fonts-with-css/webfonts";
 /* Bootstrap */
 // Begin redefine bootstrap vars
 $font-family-sans-serif: 'Open Sans', sans-serif;
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1100px
+);
 // END redefine bootstrap vars
 
 @import "../../vendor/bootstrap/scss/functions";
@@ -25,3 +31,4 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
       padding-left: 10px;
     }
 }
+

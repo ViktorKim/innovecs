@@ -8,7 +8,7 @@
 		display: inline-block;
 		position: absolute;
 		background-color: #fff;
-		top: 40%;
+		top: 25%;
 		left: 30%;
 		box-shadow: 0 0 300px 200px #fff;
 	}
@@ -21,6 +21,7 @@
 	&__title {
 		font-size: 1.125rem;
 		margin-bottom: 2px;
+		line-height: 1;
 	}
 	&__legend {
 		background-color: $accent-color;
@@ -37,7 +38,7 @@
 		.accent {
 			font-size: 1.25rem;
 			color: $accent-color;
-			white-space: nowrap;
+			//white-space: nowrap;
 		}
 		.smaller {
 			font-size: .842rem;
@@ -53,8 +54,10 @@
 	background-color: #000;
 	text-align: center;
 	padding: 20px 10px 16px 10px;
-	margin: auto -10px;
+	margin-left: -10px;
+	margin-right: -10px;
 	color: #fefdff;
+
 	&__header {
 		font-size: .875rem;
 	}
@@ -100,11 +103,10 @@
 			right: 0;
 			padding-left: 44%;
 		}
-	}
-
-	.btn {
-		margin-top: 10px;
-		margin-bottom: 7px;
-		width: 100%;
+		.btn {
+			margin-top: 10px;
+			margin-bottom: 7px;
+			width: 100%;
+		}
 	}
 }
