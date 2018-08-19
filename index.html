@@ -52,26 +52,31 @@
 
                         <form action="#">
                             <div class="form-group">
+                                <i class="fas fa-user-alt"></i>
                                 <input type="text" class="form-control" placeholder="First Name" required pattern=".{3,}">
                             </div>
                             <div class="form-group">
+                                <i class="fas fa-user-alt"></i>
                                 <input type="text" class="form-control" placeholder="Last Name" required pattern=".{3,}">
                             </div>
                             <div class="form-group">
+                                <i class="fas fa-envelope"></i>
                                 <input type="email" class="form-control" placeholder="Enter email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                             </div>
                             <div class="form-group">
-                                <select name="country" id="" class="form-control" required placeholder="Country">
-                                    <option value="">Country</option>
-                                    <option value="Romania">Romania</option>
-                                </select>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="custom-select">
+                                    <select name="country" id="" class="form-control" required placeholder="Country">
+                                        <option value="">Country</option>
+                                        <option value="Romania">Romania</option>
+                                    </select>
+                                </div>
                             </div>
 
-                            <div class="form-group">
-                                <select name="countryCode" id="" class="form-control">
-                                    <option value="+380">+380</option>
-                                </select>
-                                <input type="text" pattern="[0-9]{7,}" class="form-control" placeholder="Phone">
+                            <div class="form-group phone">
+                                <i class="fas fa-phone"></i>
+                                <input name="countryCode" pattern="[+0-9]{2,}" class="form-control phone-country-code" placeholder="+40000">
+                                <input type="text" pattern="[0-9]{7,}" class="form-control phone-number" placeholder="Phone">
                             </div>
                             <button type="submit" class="btn btn-primary">Try a 14-day trial period</button>
                         </form>

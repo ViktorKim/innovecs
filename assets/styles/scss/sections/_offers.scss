@@ -1,14 +1,15 @@
 .offers__section{
     text-align: center;
-    background-image: url("../../img/bg-offers.png");
-    background-repeat: no-repeat;
+    background: url("../../img/bg-offers.png") no-repeat;
     background-size: cover;
-    padding: 40px 0;
+    padding: 33px 0 0;
+    margin-bottom: -13px;
 }
 .offer{
     line-height: 1.5;
+    margin-bottom: 58px;
     .offer__icon_wrapper{
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     .offer__title{
         text-transform: uppercase;

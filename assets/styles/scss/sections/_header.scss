@@ -1,87 +1,110 @@
 .header {
-    background-image: url("../../img/bg-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding-top: 22px;
-    &:before {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        background-color: #fff;
-        top: 40%;
-        left: 30%;
-        box-shadow: 0px 0px 300px 200px #fff;
-    }
+	background: url("../../img/bg-header.png") no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 22px;
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		background-color: #fff;
+		top: 40%;
+		left: 30%;
+		box-shadow: 0 0 300px 200px #fff;
+	}
 }
 
 .about {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    &__title {
-        font-size: 1.125rem;
-        margin-bottom: 2px;
-    }
-    &__legend {
-        background-color: $accent-color;
-        color: #fff;
-        font-size: .875rem;
-        font-weight: 800;
-        margin-bottom: 5px;
-    }
-    &__text {
-        font-size: .875rem;
-        font-weight: 700;
-        line-height: 1.125rem;
-        margin-bottom: 2px;
-        .accent {
-            font-size: 1.25rem;
-            color: $accent-color;
-            white-space: nowrap;
-        }
-        .smaller {
-            font-size: .842rem;
-        }
-    }
-    &__image-holder {
-        height: 186px;
-        background-color: #666666;
-    }
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	&__title {
+		font-size: 1.125rem;
+		margin-bottom: 2px;
+	}
+	&__legend {
+		background-color: $accent-color;
+		color: #fff;
+		font-size: .875rem;
+		font-weight: 800;
+		margin-bottom: 5px;
+	}
+	&__text {
+		font-size: .875rem;
+		font-weight: 700;
+		line-height: 1.125rem;
+		margin-bottom: 2px;
+		.accent {
+			font-size: 1.25rem;
+			color: $accent-color;
+			white-space: nowrap;
+		}
+		.smaller {
+			font-size: .842rem;
+		}
+	}
+	&__image-holder {
+		height: 186px;
+		background-color: #666666;
+	}
 }
 
 .trader-form {
-    background-color: #000;
-    text-align: center;
-    padding: 20px 10px 16px 10px;
-    margin: auto -10px;
-    color: #fefdff;
-    &__header {
-        font-size: .875rem;
-    }
-    &__logo {
-        max-width: 113px;
-        margin-bottom: 5px;
-    }
-    &__slogan {
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    &__text{
-        line-height: 1.5rem;
-        margin-bottom: 14px;
-    }
+	background-color: #000;
+	text-align: center;
+	padding: 20px 10px 16px 10px;
+	margin: auto -10px;
+	color: #fefdff;
+	&__header {
+		font-size: .875rem;
+	}
+	&__logo {
+		max-width: 113px;
+		margin-bottom: 5px;
+	}
+	&__slogan {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&__text {
+		line-height: 1.5rem;
+		margin-bottom: 14px;
+	}
 
-    select,
-    input{
-        width: 100%;
-        font-size: 14px;
-        line-height: 1rem;
-        padding: 15px 50px;
-        margin-bottom: 10px;
-    }
+	form {
+		.form-group {
+			position: relative;
+			margin-bottom: 10px;
 
-    .btn{
-        width: 100%;
-    }
+			.fas {
+				position: absolute;
+				z-index: 1;
+				color: #000;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 16px;
+				width: 20px;
+				font-size: 1.25rem;
+			}
+		}
+
+		.phone .fas {
+			transform: rotateY(180deg) translateY(-50%);
+		}
+		.phone-country-code {
+			position: absolute;
+			width: 40%;
+			left: 0;
+		}
+		.phone-number {
+			right: 0;
+			padding-left: 44%;
+		}
+	}
+
+	.btn {
+		margin-top: 10px;
+		margin-bottom: 7px;
+		width: 100%;
+	}
 }

@@ -1,87 +1,12 @@
+/*Variables*/
 $main-color: #99cc33;
 $accent-color: #339999;
 $transition: .3s;
 
-p {
-	margin-bottom: 1.5rem;
-}
+/*Global Styles*/
+@import "global";
 
-strong,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-	font-weight: 800;
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	li {
-		margin-bottom: 1.5rem;
-		&:before {
-			content: "•";
-			margin-right: 5px;
-			font-weight: 800;
-		}
-	}
-}
-
-.section__title {
-	font-size: 1.375rem;
-	text-transform: uppercase;
-	margin-bottom: 30px;
-}
-
-.btn {
-	cursor: pointer;
-	transition: $transition;
-	color: #000;
-	display: inline-block;
-	text-decoration: none;
-	font-weight: 800;
-	text-transform: uppercase;
-	padding: 18px 24px;
-	border: none;
-	border-radius: 0px;
-	box-shadow: 0px 4px 0 0 rgba(153, 204, 51, .5);
-	margin-bottom: 4px;
-	background: -webkit-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
-	background: -moz-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
-	background: -o-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
-	background: -ms-linear-gradient(90deg, #99cc33 0%, #ccff33 100%);
-	background: linear-gradient(0deg, #99cc33 0%, #ccff33 100%);
-	&:hover{
-		color: #fff;
-		text-decoration: none;
-	}
-
-	&-arrowed {
-		position: relative;
-		font-size: 1.5rem;
-		font-weight: 800;
-		box-shadow: 0px 6px 0 0 rgba(0, 0, 0, .25);
-		padding: 12px 24px;
-		&:after {
-			font-family: 'Font Awesome 5 Free';
-			content: '\f054';
-			position: absolute;
-			right: 22px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-	}
-}
-
+/*Sections*/
 @import "sections/header";
 @import "sections/offers";
 @import "sections/start-now";
