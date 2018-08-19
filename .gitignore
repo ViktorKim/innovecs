@@ -1,6 +1,6 @@
 .idea
 .vscode
 .sass-cache
-assets/styles/css
+#assets/styles/css
 node_modules
 assets/vendor
