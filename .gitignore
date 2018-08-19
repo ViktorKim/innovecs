@@ -1,3 +1,5 @@
 .idea
 .vscode
+.sass-cache
+node_modules
 assets/vendor
