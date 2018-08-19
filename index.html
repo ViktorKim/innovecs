@@ -51,33 +51,42 @@
                             </div>
                         </header>
 
-                        <form action="#">
-                            <div class="form-group">
-                                <i class="fas fa-user-alt"></i>
-                                <input type="text" class="form-control" placeholder="First Name" required pattern=".{3,}">
-                            </div>
-                            <div class="form-group">
-                                <i class="fas fa-user-alt"></i>
-                                <input type="text" class="form-control" placeholder="Last Name" required pattern=".{3,}">
-                            </div>
-                            <div class="form-group">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" class="form-control" placeholder="Enter email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-                            </div>
-                            <div class="form-group">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="custom-select">
-                                    <select name="country" id="" class="form-control" required placeholder="Country">
-                                        <option value="">Country</option>
-                                        <option value="Romania">Romania</option>
-                                    </select>
+                        <form action="#" >
+                            <div>
+                                <div class="form-group">
+                                    <i class="fas fa-user-alt"></i>
+                                    <input type="text" name="first_name" class="form-control validate is-required" placeholder="First Name" min="3">
                                 </div>
                             </div>
-
-                            <div class="form-group phone">
-                                <i class="fas fa-phone"></i>
-                                <input name="countryCode" pattern="[+0-9]{2,}" class="form-control phone-country-code" placeholder="+40000">
-                                <input type="text" pattern="[0-9]{7,}" class="form-control phone-number" placeholder="Phone">
+                            <div>
+                                <div class="form-group">
+                                    <i class="fas fa-user-alt"></i>
+                                    <input type="text" name="last_name" class="form-control validate is-required" placeholder="Last Name" min="3">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" class="form-control validate" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="custom-select">
+                                        <select name="country" id="" class="form-control validate is-required" placeholder="Country">
+                                            <option value="">Country</option>
+                                            <option value="Romania">Romania</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group phone">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="text" name="country_code" class="form-control phone-country-code validate" placeholder="+40000">
+                                    <input type="text" name="phone_number" class="form-control phone-number validate" placeholder="Phone" min="7">
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Try a 14-day trial period</button>
                         </form>
@@ -171,6 +180,7 @@
         </div>
     </footer>
 
+    <script src="assets/scripts/main.js"></script>
 </body>
 
 </html>
