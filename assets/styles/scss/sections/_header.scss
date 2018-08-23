@@ -2,7 +2,7 @@
 	background: url("../../img/bg-header.png") no-repeat;
 	background-size: cover;
 	position: relative;
-	padding-top: 22px;
+	padding-top: 26px;
 	&:before {
 		content: '';
 		display: inline-block;
@@ -20,7 +20,7 @@
 	margin-bottom: 10px;
 	&__title {
 		font-size: 1.125rem;
-		margin-bottom: 2px;
+		margin-bottom: 6px;
 		line-height: 1;
 	}
 	&__legend {
@@ -28,13 +28,16 @@
 		color: #fff;
 		font-size: .875rem;
 		font-weight: 800;
-		margin-bottom: 5px;
+		margin-bottom: 6px;
+		letter-spacing: -0.45px;
+		padding-right: 9px;
 	}
 	&__text {
 		font-size: .875rem;
 		font-weight: 700;
 		line-height: 1.125rem;
-		margin-bottom: 2px;
+		margin-bottom: 5px;
+		letter-spacing: -0.4px;
 		.accent {
 			font-size: 1.25rem;
 			color: $accent-color;
@@ -42,6 +45,9 @@
 		}
 		.smaller {
 			font-size: .842rem;
+			display: inline-block;
+			margin-top: -1px;
+			line-height: 16px;
 		}
 	}
 	&__image-holder {
@@ -53,7 +59,7 @@
 .trader-form {
 	background-color: #000;
 	text-align: center;
-	padding: 20px 10px 16px 10px;
+	padding: 21px 10px 14px 10px;
 	margin-left: -10px;
 	margin-right: -10px;
 	color: #fefdff;
@@ -68,10 +74,18 @@
 	&__slogan {
 		text-transform: uppercase;
 		font-weight: 700;
+		margin-left: -5px;
+		letter-spacing: -0.5px;
 	}
 	&__text {
 		line-height: 1.5rem;
 		margin-bottom: 14px;
+		letter-spacing: 0.24px;
+		margin-left: 13px;
+	}
+	&__footer{
+		letter-spacing: 0.1px;
+		padding-left: 2px;
 	}
 
 	.success{
@@ -121,7 +135,7 @@
 		}
 		.btn {
 			margin-top: 10px;
-			margin-bottom: 7px;
+			margin-bottom: 9px;
 			width: 100%;
 		}
 	}
