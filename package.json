@@ -1,0 +1,15 @@
+{
+  "name": "innovecs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --style=compressed --watch assets/styles/scss:assets/styles/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.13.0"
+  }
+}

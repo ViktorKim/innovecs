@@ -1,0 +1,24 @@
+{
+  "name": "innovecs",
+  "authors": [
+    "Viktor Kim <fake2spam@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "fontawesome": "^5.2.0"
+  },
+  "devDependencies": {}
+}

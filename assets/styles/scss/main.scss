@@ -1,0 +1,14 @@
+/*Variables*/
+$main-color: #99cc33;
+$accent-color: #339999;
+$transition: .3s;
+
+/*Global Styles*/
+@import "global";
+
+/*Sections*/
+@import "sections/header";
+@import "sections/offers";
+@import "sections/start-now";
+@import "sections/footer";
+@import "media";

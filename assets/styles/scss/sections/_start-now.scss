@@ -1,0 +1,16 @@
+.start-now__section {
+    background: url("../../img/bg-start-now.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0 25px;
+    .section__title {
+        line-height: 1.875rem;
+        color: #fff;
+        letter-spacing: -0.7px;
+        margin-bottom: 25px;
+    }
+    .btn {
+        width: 100%;
+        letter-spacing: -0.5px;
+    }
+}

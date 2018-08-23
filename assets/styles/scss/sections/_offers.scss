@@ -1,0 +1,33 @@
+.offers__section{
+    text-align: center;
+    background: url("../../img/bg-offers.png") no-repeat;
+    background-size: cover;
+    padding: 33px 0 0;
+    margin-bottom: -12px;
+}
+.offer{
+    line-height: 1.5;
+    margin-bottom: 58px;
+    .offer__icon_wrapper{
+        margin-bottom: 24px;
+    }
+    .offer__title{
+        text-transform: uppercase;
+        color: $accent-color;
+        font-size: 1rem;
+		margin-bottom: 1.5rem;
+    }
+    &.left{
+        .offer__title{
+            padding-right: 7px;
+        }
+    }
+    &.right{
+        .offer__icon_wrapper{
+            margin-bottom: 25px;
+        }
+        .offer__title{
+            padding-right: 5px;
+        }
+    }
+}
